@@ -38,6 +38,3 @@ public class RedCross extends JPanel
     window.setVisible(true);
   }
 }
-
-
-

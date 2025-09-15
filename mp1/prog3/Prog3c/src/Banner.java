@@ -3,16 +3,16 @@
  * across the window.
  */
 
+import java.awt.Graphics;
 import java.awt.Color;
 import java.awt.Container;
-import java.awt.Graphics;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.Timer;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
 
-public class Prog4d extends JPanel
+public class Banner extends JPanel
                  implements ActionListener
 {
   private int xPos, yPos;  // hold the coordinates of the message
@@ -21,8 +21,8 @@ public class Prog4d extends JPanel
   public void paintComponent(Graphics g)
   {
     super.paintComponent(g); // Paint the background
-    g.setColor(Color.BLACK);
-    g.fillRect(xPos, yPos, 40, 20);
+    g.setColor(Color.RED);
+    g.drawString("Hello, Action!", xPos, yPos);
   }
 
   // Called automatically when the timer "fires"
@@ -45,7 +45,7 @@ public class Prog4d extends JPanel
     window.setBounds(300, 300, 300, 100);
 
     //  Create panel, a Banner object, which is a kind of JPanel:
-    Prog4d panel = new Prog4d();
+    Banner panel = new Banner();
     panel.setBackground(Color.CYAN);  // the default color is light gray
 
     // Add panel to window:
@@ -66,3 +66,4 @@ public class Prog4d extends JPanel
     clock.start();
   }
 }
+

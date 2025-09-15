@@ -20,11 +20,11 @@ public class Prog4b extends JPanel
     int xCenter = getWidth() / 2;
     int yCenter = getHeight() / 2;
     g.setColor(Color.RED);
-    g.fillOval(xCenter - 100, yCenter - 100, 200, 200);
+    g.fillOval(xCenter - 25, yCenter - 25, 50, 50);
     g.setColor(Color.WHITE);
-    g.fillOval(xCenter - 75, yCenter - 75, 150, 150); 
+    g.fillOval(xCenter - 13, yCenter - 13, 26, 26); 
     g.setColor(Color.RED);
-    g.fillOval(xCenter - 38, yCenter - 38, 75, 75);  
+    g.fillOval(xCenter - 5, yCenter - 5, 10, 10);  
 
   }
 
@@ -40,6 +40,5 @@ public class Prog4b extends JPanel
     window.setVisible(true);
   }
 }
-
 
 
