@@ -19,6 +19,8 @@ public class Morning extends JFrame
     super("Morning");
     rooster = new EasySound("roost.wav");
     rooster.play();
+    rooster.play();
+    rooster.play();
 
     Container c = getContentPane();
     c.setBackground(Color.WHITE);

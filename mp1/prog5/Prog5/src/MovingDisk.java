@@ -21,6 +21,9 @@ public class MovingDisk extends JPanel
 
   public void paintComponent(Graphics g)
   {
+	/* 
+	 * this is a doc
+	**/
     int x = 150 - (int)(100 * Math.cos(0.005 * Math.PI * time));
     int y = 130 - (int)(75 * Math.sin(0.005 * Math.PI * time));
     int r = 20;
